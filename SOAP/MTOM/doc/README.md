@@ -32,7 +32,7 @@ Edit the Axis2 configuration file: `tomcat/webapps/axis2/WEB-INF/conf/axis2.xml`
 
 ![set "enableMTOM" to "true"](./enable-mtom.png "enable mtom")
 
-** DO NOT FORGET TO RESTART TOMCAT !!! **
+**DO NOT FORGET TO RESTART TOMCAT !!!**
 
 ## Test the MTOM attachment
 
@@ -49,20 +49,20 @@ Just in case, you can find a copy of the WSDL [here](./wsdl/MtomService.wsdl).
 
 ### Test in SOAP UI
 
-- Get SOAP UI (tested with version 5) 
-- Import the WSDL
-- Open the auto-generated request for the `MtomServiceSoap12Binding` binding
-  !(./binding.png)
-- Make sure `Enable MTOM` and `Force MTOM` in the bottom left pane are set to `true`. 
-  !(./mtom-soapui.png)
-- Import your attachment in the bottom pane. 
-  !(./attach-soapui.png)
-- Make sure to reference the attachment in your SOAP message using `cid:attachment-name`. 
-  !(./soap-soapui.png)
-- Make sure the attachement part in the bottom pane is set and the attachment type is set to `XOP`
-  !(./attach-soapui.png)
-- Fire the request and observe the result ! 
-  !(./soap-result.png)
+1. Get SOAP UI (tested with version 5) 
+2. Import the WSDL
+3. Open the auto-generated request for the `MtomServiceSoap12Binding` binding
+   ![](./binding.png)
+4. Make sure `Enable MTOM` and `Force MTOM` in the bottom left pane are set to `true`. 
+   ![](./mtom-soapui.png)
+5. Import your attachment in the bottom pane. 
+   ![](./attach-soapui.png)
+6. Make sure to reference the attachment in your SOAP message using `cid:attachment-name`. 
+   ![](./soap-soapui.png)
+7. Make sure the attachement part in the bottom pane is set and the attachment type is set to `XOP`
+   ![](./attach-soapui.png)
+8. Fire the request and observe the result ! 
+   ![](./soap-result.png)
 
 Note: by clicking on the raw button in the request pane, you can have a look at the complete HTTP request. 
 
