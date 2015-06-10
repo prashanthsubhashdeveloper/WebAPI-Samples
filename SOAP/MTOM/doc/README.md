@@ -24,13 +24,13 @@ $ ./bin/startup.sh
 
 Build the .aar archive and deploy it. 
 
-![build the .aar archive](./build.png "build the .aar archive")
+![build the .aar archive](./build.png)
 
 ### Change the Axis Configuration to enable MTOM
 
 Edit the Axis2 configuration file: `tomcat/webapps/axis2/WEB-INF/conf/axis2.xml` and set the `enableMTOM` parameter to `true`.
 
-![set "enableMTOM" to "true"](./enable-mtom.png "enable mtom")
+![set "enableMTOM" to "true"](./enable-mtom.png)
 
 **DO NOT FORGET TO RESTART TOMCAT !!!**
 
@@ -44,7 +44,7 @@ Click on the `MTOMService` to get the WSDL.
 
 *Note:* make sure you save the file in its original format (File > Save As...). **Do not use copy paste that may break the XML format.**
 
-Just in case, you can find a copy of the WSDL [here](./wsdl/MtomService.wsdl).
+Just in case, you can find a copy of the WSDL [here](../wsdl/MtomService.wsdl).
 
 
 ### Test in SOAP UI
